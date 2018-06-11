@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row subtitle">
+    <h3> Cervezas Favoritas </h3>
+  </div>
+  <div class="row">
+    <table *ngIf="wishlist" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">ABV</th>
+          <th scope="col">IBU</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let beer of wishlist">
+          <th scope="row">{{beer.name}}</th>
+          <td>{{beer.abv}}</td>
+          <td>{{beer.ibu}}</td>
+          <td><a routerLink="/beers/{{beer.id}}">Details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

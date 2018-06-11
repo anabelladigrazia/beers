@@ -1,0 +1,37 @@
+@font-face {
+    font-family: CabinSemiBold;
+    src: url('../fonts/Cabin-SemiBold.ttf');
+}
+@font-face {
+    font-family: CabinRegular;
+    src: url('../fonts/Cabin-Regular.ttf');
+}
+@font-face {
+    font-family: CabinSemiItalic;
+    src: url('../fonts/Cabin-Italic.ttf');
+}
+
+
+@font-face {
+    font-family: OldStandardBold;
+    src: url('../fonts/OldStandard-Bold.ttf');
+}
+@font-face {
+    font-family: OldStandardRegular;
+    src: url('../fonts/OldStandard-Regular.ttf');
+}
+@font-face {
+    font-family: OldStandardItalic;
+    src: url('../fonts/OldStandard-Italic.ttf');
+}
+
+body{
+  font-family: $font-body;
+
+  h1{
+    font-family: $font-titles;
+  }
+  a.nav-link{
+    font-family: $font-menu;
+  }
+}

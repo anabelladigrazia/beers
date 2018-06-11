@@ -1,0 +1,29 @@
+<div class="container">
+  <div *ngIf="beer" class="row justify-content-md-center">
+    <div class="col-3 beer-img">
+      <img src={{beer.image_url}}>
+    </div>
+    <div class="col-6">
+      <p><span class="label label-default">Name: </span> {{beer.name}}</p>
+      <p><span class="label label-default">IBU: </span> {{beer.name}}</p>
+      <p><span class="label label-default">ABV: </span> {{beer.name}}</p>
+      <p><span class="label label-default">Description: </span> {{beer.name}}</p>
+
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Ver mas
+      </a>
+
+      <a class="btn" *ngIf="inWishlist" (click)="deleteFromWishlist()">
+        <i class="icon-heart-empty"></i>Sacar de Favoritos
+      </a>
+      <a class="btn" *ngIf="!inWishlist" (click)="addToWishlist()">
+        <i class="icon-heart-empty"></i>Agregar a Favoritos
+      </a>
+      <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
